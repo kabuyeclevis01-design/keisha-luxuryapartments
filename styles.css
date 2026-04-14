@@ -1446,3 +1446,81 @@ ul {
         font-size: 2rem;
     }
 }
+
+/* ============================================
+   Amenities Directory Styles
+   ============================================ */
+
+.amenities-directory {
+    padding: 2rem 0 4rem;
+    background-color: var(--secondary-color);
+}
+
+.amenities-directory .section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2.5rem;
+}
+
+.amenity-category {
+    padding: 2rem;
+    background-color: var(--primary-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+}
+
+.amenity-category h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.5rem;
+    color: var(--accent-light);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.amenity-category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.amenity-category li {
+    font-size: 0.95rem;
+    color: var(--text-color);
+    padding: 0.4rem 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.amenity-category li::before {
+    content: '•';
+    color: var(--accent-color);
+    margin-right: 0.8rem;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+/* Service Highlights on Room Cards */
+.room-services {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.room-service-tag {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background-color: rgba(212, 175, 55, 0.1);
+    color: var(--accent-color);
+    padding: 0.25rem 0.5rem;
+    border-radius: 2px;
+}
